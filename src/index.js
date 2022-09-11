@@ -20,7 +20,7 @@ refs.searchField.addEventListener(
 
 function searchCountries(e) {
   e.preventDefault();
-  searchQuery = e.target.value.trim();
+  const searchQuery = e.target.value.trim();
   if (searchQuery === '') {
     refs.countryList.innerHTML = '';
     return;
